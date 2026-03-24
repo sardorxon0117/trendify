@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:trendify/core/constants/app_constants.dart';
 import 'package:trendify/core/constants/icon_constrans.dart';
 import 'package:trendify/core/theme/app_colors.dart';
 import 'package:trendify/core/theme/app_text_styles.dart';
 import 'package:trendify/features/home/screens/Search.dart';
+import 'package:trendify/features/home/widgets/FloatingActionButton.dart';
 import 'package:trendify/features/home/widgets/ProductCardGrid.dart';
 
 class CategoryPage extends StatelessWidget {
@@ -13,6 +15,7 @@ class CategoryPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.white,
       appBar: AppBar(
         title: Text(product_category, style: AppTextStyles.h4),
         centerTitle: true,
@@ -40,8 +43,11 @@ class CategoryPage extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.only(top: 8, left: 24, right: 24),
-        child: ProductCardsGrid(category: product_category),
+        child: ProductCardsGrid(categoryName: product_category),
       ),
+      floatingActionButton: FloatingActionButtonn(),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButtonAnimator: FloatingActionButtonAnimator.scaling,
     );
   }
 }

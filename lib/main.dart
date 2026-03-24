@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:camera/camera.dart';
 import 'package:trendify/features/home/screens/BottomNavBar.dart';
+import 'package:trendify/features/home/screens/ScanningPhotoCamera.dart';
 import 'package:trendify/features/onBoarding/screens/splashPage.dart';
 
-void main() {
+late List<CameraDescription>  cameras;
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  cameras = await availableCameras();
   runApp(MyApp());
 }
 

@@ -7,7 +7,7 @@ import 'package:trendify/core/theme/app_text_styles.dart';
 import 'package:trendify/features/auth/widgets/notificationBtn.dart';
 import 'package:trendify/features/home/screens/Category.dart';
 import 'package:trendify/features/home/screens/Search.dart';
-import 'package:trendify/features/home/widgets/CategoryTabBar.dart';
+import 'package:trendify/core/Widgets/CategoryTabBar.dart';
 import 'package:trendify/features/home/widgets/ProductCardHorizantal.dart';
 import 'package:trendify/features/home/widgets/ViewAll.dart';
 import 'package:trendify/features/home/widgets/categoryCard.dart';
@@ -73,7 +73,16 @@ class _HomeState extends State<Home> {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => SearchPage()),
+                    PageRouteBuilder(
+                      transitionDuration: const Duration(milliseconds: 100),
+                      pageBuilder: (context, animation, secondaryAnimation) => const SearchPage(),
+                      transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                        return FadeTransition(
+                          opacity: animation,
+                          child: child,
+                        );
+                      },
+                    ),
                   );
                 },
               ),
@@ -91,7 +100,7 @@ class _HomeState extends State<Home> {
               SizedBox(height: 20),
               Container(
                 height: 268,
-                child: ProductCardHorizantal(category: ""),
+                child: ProductCardHorizantal(categoryName: ""),
               ),
               SizedBox(height: 28),
 
@@ -123,11 +132,11 @@ class _HomeState extends State<Home> {
               SizedBox(height: 28),
               ViewAll(title: AppConstants.newArrival),
               SizedBox(height: 16),
-              ProductCardHorizantal(category: "", priceUp: 200),
+              ProductCardHorizantal(categoryName: "", priceUp: 200),
               SizedBox(height: 28),
               ViewAll(title: AppConstants.hotDealsThisWeek, onTap: (){}),
               SizedBox(height: 16),
-              ProductCardHorizantal(category: "", priceDown: 199),
+              ProductCardHorizantal(categoryName: "", priceDown: 199),
             ],
           ),
         ),

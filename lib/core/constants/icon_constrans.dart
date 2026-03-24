@@ -20,6 +20,7 @@ class IconConstrans {
   static const String right = 'assets/icons/right.png';
 
   // Bottom Navigation Bar
+
   static const String home_outlined = 'assets/icons/home_outline.png';
   static const String home_sharp = 'assets/icons/home_sharp.png';
   static const String heart_outlined = 'assets/icons/heart_outline.png';
@@ -31,4 +32,14 @@ class IconConstrans {
   static const String profile_outlined = 'assets/icons/profile_outline.png';
   static const String profile_sharp = 'assets/icons/profile_sharp.png';
 
+  // Category
+
+  static const String sort = 'assets/icons/sort.png';
+  static const String filter = 'assets/icons/filter.png';
+  static const String camera = 'assets/icons/camera.png';
+
+  // Home
+
+  static const String notFound = 'assets/icons/notfound.png';
+  static const String close = 'assets/icons/close.png';
 }

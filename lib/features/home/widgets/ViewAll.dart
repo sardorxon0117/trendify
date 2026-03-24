@@ -41,3 +41,41 @@ class ViewAll extends StatelessWidget {
     );
   }
 }
+
+class SeeAll extends StatelessWidget {
+  String title;
+  VoidCallback? onTap;
+  SeeAll({
+    super.key,
+    required this.title,
+    this.onTap
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Text(title, style: AppTextStyles.h4),
+        GestureDetector(
+          onTap: onTap,
+          child: Row(
+            children: [
+              Text(
+                AppConstants.seeAll,
+                style: AppTextStyles.primaryBtn,
+              ),
+              SizedBox(width: 8),
+              Image.asset(
+                IconConstrans.right,
+                color: AppColors.primary,
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+}
+

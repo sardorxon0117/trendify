@@ -32,12 +32,18 @@ class AppConstants {
     ),
   ];
 
-  static const String walkthroughsTitle1 = "Explore Fashion Trends with Trendify";
-  static const String walkthroughsSubtitle1 = "Dive into the world of fashion with Trendify, where you can discover the latest and hottest styles curated just for you.";
-  static const String walkthroughsTitle2 = "Your Style, Your Trendify Experience";
-  static const String walkthroughsSubtitle2 = "Trendify goes beyond fashion - it's a personalized style journey. Start your fashion adventure with Trendify today.";
-  static const String walkthroughsTitle3 = "Seamless Fashion, Seamless Shopping";
-  static const String walkthroughsSubtitle3 = "Trendify offers an effortless shopping experience, making your style journey smoother than ever.";
+  static const String walkthroughsTitle1 =
+      "Explore Fashion Trends with Trendify";
+  static const String walkthroughsSubtitle1 =
+      "Dive into the world of fashion with Trendify, where you can discover the latest and hottest styles curated just for you.";
+  static const String walkthroughsTitle2 =
+      "Your Style, Your Trendify Experience";
+  static const String walkthroughsSubtitle2 =
+      "Trendify goes beyond fashion - it's a personalized style journey. Start your fashion adventure with Trendify today.";
+  static const String walkthroughsTitle3 =
+      "Seamless Fashion, Seamless Shopping";
+  static const String walkthroughsSubtitle3 =
+      "Trendify offers an effortless shopping experience, making your style journey smoother than ever.";
   static const String skip = "Skip";
   static const String continuee = "Continue";
   static const String getStarted = "Let's Get Started";
@@ -59,7 +65,8 @@ class AppConstants {
   // SignUp screen
 
   static const String joinTrendifyToday = 'Join Trendify Today 👤';
-  static const String embarkFashionJourneyTailoredYou = 'Embark on a fashion journey tailored for you.';
+  static const String embarkFashionJourneyTailoredYou =
+      'Embark on a fashion journey tailored for you.';
   static const String email = 'Email';
   static const String password = 'Password';
   static const String iAgreeToTrendify = 'I agree to Trendify';
@@ -67,14 +74,16 @@ class AppConstants {
   static const String or = 'or';
   static const String termsConditions = ' Terms & Conditions.';
   static const String welcomeBack = 'Welcome Back! 👋';
-  static const String signAccessYourPersonalizedFashion = 'Sign in to access your personalized fashion.';
+  static const String signAccessYourPersonalizedFashion =
+      'Sign in to access your personalized fashion.';
   static const String rememberMe = 'Remember me';
-  static const String forgotPassword = 'Forgot Password?';
+  static const String forgotPassword = ' Forgot Password?';
 
   // Forgot Password screen
 
   static const String forgotYourPassword = 'Forgot Your Password? 🔑';
-  static const String forgotPasswordTitle = "We've got you covered. Enter your registered email to reset your password. We will send an OTP code to your email for the next steps.";
+  static const String forgotPasswordTitle =
+      "We've got you covered. Enter your registered email to reset your password. We will send an OTP code to your email for the next steps.";
   static const String yourRegisteredEmail = "Your Registered Email";
   static const String chesking = "checking...";
   static const String fieldEmpty = "The field is empty.";
@@ -84,49 +93,72 @@ class AppConstants {
 
   // Enter OTP screen
 
-  static const String enterOTPCode  = "Enter OTP Code 🔐";
-  static const String enterOTPCodeTitle  = "Please check your email inbox for a message from Trendify. Enter the one-time verification code below.";
-  static const String canResendCode  = "You can resend the code in ";
-  static const String seconds  = " seconds";
-  static const String resendCode  = "Resend code";
+  static const String enterOTPCode = "Enter OTP Code 🔐";
+  static const String enterOTPCodeTitle =
+      "Please check your email inbox for a message from Trendify. Enter the one-time verification code below.";
+  static const String canResendCode = "You can resend the code in ";
+  static const String seconds = " seconds";
+  static const String resendCode = "Resend code";
 
   // New Password screen
 
-  static const String longPasswordCharacter  = "Password must be at least 8 characters long.";
-  static const String passwordNotMatch  = "Passwords do not match.";
-  static const String correctPassword  = "Correct password.";
-  static const String confirmNewPassword  = "Confirm New Password";
-  static const String newPassword  = "New Password";
-  static const String secureYourAccount  = "Secure Your Account 🔒";
-  static const String secureYourAccountTitle  = "Almost there! Create a new password for your Trendify account to keep it secure. Remember to choose a strong and unique password.";
-  static const String saveNewPassword  = "Save New Password";
+  static const String longPasswordCharacter =
+      "Password must be at least 8 characters long.";
+  static const String passwordNotMatch = "Passwords do not match.";
+  static const String correctPassword = "Correct password.";
+  static const String confirmNewPassword = "Confirm New Password";
+  static const String newPassword = "New Password";
+  static const String secureYourAccount = "Secure Your Account 🔒";
+  static const String secureYourAccountTitle =
+      "Almost there! Create a new password for your Trendify account to keep it secure. Remember to choose a strong and unique password.";
+  static const String saveNewPassword = "Save New Password";
 
   // Successful Changed Pasword screen
 
-  static const String you_reAllSet  = "You're All Set!";
-  static const String you_reAllSetTitle  = "Your password has been successfully changed.";
-  static const String goToHomepage  = "Go to Homepage";
+  static const String you_reAllSet = "You're All Set!";
+  static const String you_reAllSetTitle =
+      "Your password has been successfully changed.";
+  static const String goToHomepage = "Go to Homepage";
 
   // Home screen
 
-  static const String searchTrends  = "Search Trends...";
-  static const String deepSpace  = "Deep Space";
+  static const String searchTrends = "Search Trends...";
+  static const String deepSpace = "Deep Space";
 
-  static const String discover  = "Discover";
-  static const String women  = "Women";
-  static const String men  = "Men";
-  static const String shoe  = "Shoe";
-  static const String bag  = "Bag";
-  static const String luxury  = "Luxury";
-  static const String kids  = "Kids";
-  static const String sports  = "Sports";
-  static const String beauty  = "Beauty";
-  static const String lifestyle  = "Lifestyle";
-  static const String other  = "Other";
+  static const String discover = "Discover";
+  static const String women = "Women";
+  static const String men = "Men";
+  static const String shoe = "Shoe";
+  static const String bag = "Bag";
+  static const String luxury = "Luxury";
+  static const String kids = "Kids";
+  static const String sports = "Sports";
+  static const String beauty = "Beauty";
+  static const String lifestyle = "Lifestyle";
+  static const String other = "Other";
 
-  static const String newArrival  = "New Arrival";
-  static const String hotDealsThisWeek  = "Hot Deals This Week";
-  static const String viewAll  = "View All";
+  static const String newArrival = "New Arrival";
+  static const String hotDealsThisWeek = "Hot Deals This Week";
+  static const String viewAll = "View All";
+  static const String seeAll = "See All";
+
+  // Category screen
+
+  static const String sort = "Sort";
+  static const String filter = "Filter";
+
+  // Search screen
+
+  static const String recentSearches = "Recent Searches";
+  static const String trendsNotFound = "Trends Not Found";
+  static const String trendsNotFoundBody = "Did you accidentally mistype? Double-check your spelling and try again.";
+  static const String categories = "Categories";
+
+  // Product screen
+
+  static const String product = "Product";
+  static const String buyNow = "Buy Now";
+  static const String addToCart = "Add to Cart";
 
 }
 
@@ -271,8 +303,8 @@ class Category {
   Category({required this.title, required this.image});
 }
 
-
 List<Category> categories = [
+  Category(title: AppConstants.discover, image: ImageConstrants.women),
   Category(title: AppConstants.women, image: ImageConstrants.women),
   Category(title: AppConstants.men, image: ImageConstrants.men),
   Category(title: AppConstants.shoe, image: ImageConstrants.shoe),

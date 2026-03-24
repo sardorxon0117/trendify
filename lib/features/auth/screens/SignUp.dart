@@ -5,11 +5,9 @@ import 'package:trendify/core/constants/icon_constrans.dart';
 import 'package:trendify/core/theme/app_colors.dart';
 import 'package:trendify/core/theme/app_text_styles.dart';
 import 'package:trendify/features/auth/screens/SignIn.dart';
-import 'package:trendify/features/auth/screens/resetPasswordSuccessful.dart';
 import 'package:trendify/features/auth/widgets/Dialog.dart';
 import 'package:trendify/features/auth/widgets/inputWidget.dart';
 import 'package:trendify/features/home/screens/BottomNavBar.dart';
-import 'package:trendify/features/home/screens/home.dart';
 import 'package:trendify/features/onBoarding/widgets/Buttons.dart';
 
 class SignUp extends StatefulWidget {

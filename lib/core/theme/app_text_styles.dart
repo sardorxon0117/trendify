@@ -251,4 +251,22 @@ class AppTextStyles {
         FontVariation('wght', 600)
       ]
   );
+
+  static const TextStyle black_s20_w700 = TextStyle(
+      fontSize: 20,
+      color: AppColors.textGrey800,
+      fontFamily: 'Urbanist',
+      fontVariations: [
+        FontVariation('wght', 700)
+      ]
+  );
+
+  static const TextStyle grey_s20_w500 = TextStyle(
+      fontSize: 20,
+      color: AppColors.textGrey600,
+      fontFamily: 'Urbanist',
+      fontVariations: [
+        FontVariation('wght', 500)
+      ]
+  );
 }

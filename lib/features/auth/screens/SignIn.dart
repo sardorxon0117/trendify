@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:trendify/core/constants/app_constants.dart';
 import 'package:trendify/core/constants/icon_constrans.dart';
@@ -63,14 +64,14 @@ class _SignInState extends State<SignIn> {
                   SizedBox(height: 10),
                   InputWidget(
                     prefixIcon: IconConstrans.message,
-                    hintText: "Email",
+                    hintText: AppConstants.email,
                   ),
                   SizedBox(height: 20),
                   Text(AppConstants.password, style: AppTextStyles.inputTitle),
                   SizedBox(height: 10),
                   InputWidget(
                     prefixIcon: IconConstrans.lock,
-                    hintText: "Password",
+                    hintText: AppConstants.password,
                     suffixIcon: showIcon,
                     isObscure: isShow,
                     onTap: () {
@@ -87,26 +88,31 @@ class _SignInState extends State<SignIn> {
                   ),
                   SizedBox(height: 20),
                   Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Checkbox(
                         value: false,
                         onChanged: (t) {},
                         side: BorderSide(color: AppColors.primary, width: 2),
                       ),
-                      Text(
-                        AppConstants.rememberMe,
-                        style: AppTextStyles.bodyXLarge500,
-                      ),
-                      Spacer(),
-                      GestureDetector(
-                        child: Text(
-                          AppConstants.forgotPassword,
-                          style: AppTextStyles.bodyXLarge600Green,
+
+                      Expanded(
+                        child: Text.rich(
+                          TextSpan(
+                            children: [
+                              TextSpan(
+                                text: AppConstants.rememberMe,
+                                style: AppTextStyles.bodyXLarge500,
+                              ),
+                              TextSpan(
+                                text: AppConstants.forgotPassword,
+                                style: AppTextStyles.bodyXLarge500Green,
+                                recognizer: TapGestureRecognizer()
+                                  ..onTap = () {},
+                              ),
+                            ],
+                          ),
                         ),
-                        onTap: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => ForgotPassword()));
-                        },
                       ),
                     ],
                   ),
