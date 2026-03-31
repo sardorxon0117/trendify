@@ -1,4 +1,6 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:trendify/core/constants/AppSting.dart';
 import 'package:trendify/features/home/screens/home.dart';
 
 import '../../../core/constants/icon_constrans.dart';
@@ -19,6 +21,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.white,
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         showUnselectedLabels: true,
@@ -47,31 +50,31 @@ class _BottomNavBarState extends State<BottomNavBar> {
             icon: currentIndex == 0
                 ? Image.asset(IconConstrans.home_sharp)
                 : Image.asset(IconConstrans.home_outlined),
-            label: "Home",
+            label: AppStrings.home.tr(),
           ),
           BottomNavigationBarItem(
             icon: currentIndex == 1
                 ? Image.asset(IconConstrans.heart_sharp)
                 : Image.asset(IconConstrans.heart_outlined),
-            label: "Wishlist",
+            label: AppStrings.wishlist.tr(),
           ),
           BottomNavigationBarItem(
             icon: currentIndex == 2
                 ? Image.asset(IconConstrans.bag_sharp)
                 : Image.asset(IconConstrans.bag_outlined),
-            label: "Cart",
+            label: AppStrings.cart.tr(),
           ),
           BottomNavigationBarItem(
             icon: currentIndex == 3
                 ? Image.asset(IconConstrans.paper_sharp)
                 : Image.asset(IconConstrans.paper_outlined),
-            label: "My Order",
+            label: AppStrings.myOrder.tr(),
           ),
           BottomNavigationBarItem(
             icon: currentIndex == 4
                 ? Image.asset(IconConstrans.profile_sharp)
                 : Image.asset(IconConstrans.profile_outlined),
-            label: "Account",
+            label: AppStrings.account.tr(),
           ),
         ],
       ),
